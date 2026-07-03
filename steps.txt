@@ -18,4 +18,17 @@ then we apply train test split method (Divide dataset in two subnets train / tes
 Here we apply feature scaling for normalize(convert huge numbers of values in tiny values) feature this helps in ML optimization
 we start training model using Logistic algorithm 
 then start prediction later we get result of 89% accuracy 
-for confirming is it not overfitting we compare with confusion matrix(correct\wrong prediction) , classification report(Precision\Recall\F1) , correct prediction , incorrect prediction.
+for confirming is it not overfitting we compare with confusion matrix(correct\wrong prediction) , classification report(Precision\Recall=Detection\F1) , correct prediction , incorrect prediction.
+we observe that in classification report show that class 0 & class 1 has major difference in percentage ,where class 0 is well train & tested give expected output but while looking for class 1 it doesn't shows expected result as perspective of class 0 .
+so overcome this problem of class imbalance we check numbers of target prediction in two categories class 0 & 1, it has major difference in their numbers so prediction silently becoming bias towards 0 why because it has large numbers that defines actual purpose of confusion matrix
+so we apply class imbalance to class 1 but now suprisingly there is another problem occured
+New problem : balance trade-off between Precision Recall , when we first time check classification report Precision percentage was higher than recall but it became reverse
+so overcome bias problem we plan for apply advance methods of machine learning 
+Rather than depends on logistic regression we apply random forest regression : it handels nonlinear pattern , feature interaction , it has low scalling dependency
+then with help of random forest regressor we predict value of class 0 & class 1 without bias .
+we apply thresholding tuning to not check accuracy but f1 scrore on basis of precision recall tradeoff , we get best f1 score compare to previous one but it still lack in class 0 recall 
+by seeing all this we think to apply hyperparameter but we didn't , because it highly focuses on accuracy rather than precison recall f1 so we ignore this step 
+here comes model saving step after program end we get to know that model is not stored so we apply joblib
+it dump model in model/here(here it saves as serialization in disk means in storage permenantly) then we create predict.py to load model (here it saves deserialization in ram means in temperary storage).
+we forget about encoded features , we found that user cannot give input in numbers as requirement of text .
+we give different variables to each label encoded feature then apply model saving step .

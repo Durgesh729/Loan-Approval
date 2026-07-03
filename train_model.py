@@ -1,18 +1,26 @@
 import pandas as pd
-
+import numpy as np
+import joblib
 from sklearn.preprocessing import LabelEncoder
-from sklearn.preprocessing import StandardScaler
 
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score
-from sklearn.metrics import accuracy_score
-from sklearn.metrics import confusion_matrix
-from sklearn.metrics import classification_report
-# Load Dataset
+
+from sklearn.ensemble import RandomForestClassifier
+
+from sklearn.metrics import (
+    accuracy_score,
+    confusion_matrix,
+    classification_report,
+    f1_score
+)
+
+# LOAD DATASET
+
+
 data = pd.read_csv("dataset/train.csv")
 
-# Separate Features and Target
+# FEATURES AND TARGET
+
 X = data.drop(
     ["loan_status", "cb_person_default_on_file"],
     axis=1
@@ -20,22 +28,31 @@ X = data.drop(
 
 y = data["loan_status"]
 
-# Label Encoding
-label_encoder = LabelEncoder()
+# LABEL ENCODING
+home_encoder = LabelEncoder()
 
-X["person_home_ownership"] = label_encoder.fit_transform(
+intent_encoder = LabelEncoder()
+
+grade_encoder = LabelEncoder()
+
+# ENCODE COLUMNS
+
+X["person_home_ownership"] = home_encoder.fit_transform(
     X["person_home_ownership"]
 )
 
-X["loan_intent"] = label_encoder.fit_transform(
+X["loan_intent"] = intent_encoder.fit_transform(
     X["loan_intent"]
 )
 
-X["loan_grade"] = label_encoder.fit_transform(
+X["loan_grade"] = grade_encoder.fit_transform(
     X["loan_grade"]
 )
 
-# Train Test Split
+
+# TRAIN TEST SPLIT
+
+
 X_train, X_test, y_train, y_test = train_test_split(
     X,
     y,
@@ -43,52 +60,58 @@ X_train, X_test, y_train, y_test = train_test_split(
     random_state=42
 )
 
-# Feature Scaling
-scaler = StandardScaler()
+# RANDOM FOREST MODEL
 
-X_train = scaler.fit_transform(X_train)
 
-X_test = scaler.transform(X_test)
+model = RandomForestClassifier(
+    n_estimators=200,
+    class_weight="balanced_subsample",
+    random_state=42,
+    n_jobs=-1
+)
 
-# Model Training
-model = LogisticRegression(max_iter=1000)
+
+# MODEL TRAINING
+
 
 model.fit(X_train, y_train)
 
-# Prediction
-y_pred = model.predict(X_test)
+# PROBABILITY PREDICTION
 
-# Accuracy Evaluation
-accuracy = accuracy_score(y_test, y_pred)
 
-print("Model Accuracy:", accuracy)
+y_prob = model.predict_proba(X_test)[:, 1]
 
-# Accuracy Score
-accuracy = accuracy_score(y_test, y_pred)
 
-print("Accuracy Score:")
-print(accuracy)
+# THRESHOLD TUNING
 
-# Confusion Matrix
-cm = confusion_matrix(y_test, y_pred)
 
-print("\nConfusion Matrix:")
-print(cm)
+threshold = 0.42
 
-# Classification Report
-report = classification_report(y_test, y_pred)
+y_pred = (y_prob >= threshold).astype(int)
 
-print("\nClassification Report:")
-print(report)
+# SAVE MODEL
 
-# Correct Predictions
-correct_predictions = (y_test == y_pred).sum()
+joblib.dump(model, "model/loan_model.pkl")
 
-print("\nCorrect Predictions:")
-print(correct_predictions)
+print("\nModel Saved Successfully")
 
-# Incorrect Predictions
-incorrect_predictions = (y_test != y_pred).sum()
+# =========================================
+# SAVE ENCODERS
+# =========================================
 
-print("\nIncorrect Predictions:")
-print(incorrect_predictions)
+joblib.dump(
+    home_encoder,
+    "model/home_encoder.pkl"
+)
+
+joblib.dump(
+    intent_encoder,
+    "model/intent_encoder.pkl"
+)
+
+joblib.dump(
+    grade_encoder,
+    "model/grade_encoder.pkl"
+)
+
+print("Encoders Saved Successfully")
