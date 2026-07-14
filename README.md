@@ -299,20 +299,21 @@ These features undergo preprocessing including:
 </table>
 
 ---
+---
 
-<table>
+<div align="center">
 
-<tr>
-
-<td align="center">
-
-<img src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif" width="300">
-
-</td>
-
-<td>
+<img src="https://media.giphy.com/media/coxQHKASG60HrHtvkt/giphy.gif" width="180"/>
 
 # Installation
+
+Follow the steps below to set up the **Loan Approval Prediction System** on your local machine.
+
+</div>
+
+<br>
+
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/CodexxNinja/Loan-Approval.git
@@ -320,47 +321,73 @@ git clone https://github.com/CodexxNinja/Loan-Approval.git
 cd Loan-Approval
 ```
 
-### Create Virtual Environment
+### 2. Create a Virtual Environment
 
 ```bash
 python -m venv venv
 ```
 
-Windows
+### 3. Activate the Virtual Environment
+
+**Windows**
 
 ```bash
 venv\Scripts\activate
 ```
 
-Linux / macOS
+**Linux / macOS**
 
 ```bash
 source venv/bin/activate
 ```
 
-Install Dependencies
+### 4. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Train Model
+### 5. Train the Machine Learning Model
 
 ```bash
 python train_model.py
 ```
 
-Run FastAPI
+### 6. Start the FastAPI Server
 
 ```bash
 uvicorn app:app --reload
 ```
 
-</td>
+<div align="center">
 
-</tr>
+### Installation Flow
 
-</table>
+```text
+Clone Repository
+        │
+        ▼
+Create Virtual Environment
+        │
+        ▼
+Activate Environment
+        │
+        ▼
+Install Dependencies
+        │
+        ▼
+Train ML Model
+        │
+        ▼
+Run FastAPI Server
+        │
+        ▼
+Open in Browser 🚀
+```
+
+</div>
+
+---
 
 ---
 ---
