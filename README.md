@@ -1,55 +1,97 @@
 <div align="center">
 
-# 💳 Loan Approval Prediction System
+<img src="assets/hero.gif" width="900">
 
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2RzN2RrNTRnY2M3bTBpM3FpdWQ0cWh1dDl4eTJzY3Rzd29wZmFmZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/coxQHKASG60HrHtvkt/giphy.gif" width="500"/>
+# Loan Approval Prediction System
 
-### 🤖 Smart • Fast • Accurate
+### Intelligent Loan Approval Prediction using Machine Learning
 
-Predict loan approval instantly using Machine Learning.
-
-<img src="https://readme-typing-svg.demolab.com?font=Poppins&size=22&duration=3500&pause=1000&color=22C55E&center=true&vCenter=true&width=650&lines=Random+Forest+Classifier;FastAPI+Backend;Probability-Based+Predictions;Interactive+Multi-Step+UI"/>
+An end-to-end Machine Learning web application that predicts loan approval status using an optimized **Random Forest Classifier**, delivering real-time predictions through a modern FastAPI backend and responsive multi-step interface.
 
 </div>
 
 ---
 
-# 🎯 Why this Project?
+<table>
+<tr>
 
-> 💡 An intelligent Machine Learning application that predicts whether a loan application should be **Approved** or **Rejected** based on financial and credit-related information.
+<td width="45%">
 
-✨ Built with a modern FastAPI backend and an elegant multi-step frontend for a seamless user experience.
+## Overview
+
+This application analyzes applicant financial and credit information to determine the probability of loan approval.
+
+It includes:
+
+- Random Forest ML Model
+- FastAPI REST API
+- Automatic Data Preprocessing
+- Multi-Step Interactive UI
+- Probability-based Predictions
+- Beautiful Result Dashboard
+
+</td>
+
+<td width="55%" align="center">
+
+<img src="assets/overview.gif" width="350">
+
+</td>
+
+</tr>
+</table>
 
 ---
 
-# 🌟 Highlights
+<table>
+<tr>
 
-| 🎯 | Feature |
-|:---:|---------|
-| 🤖 | Random Forest Prediction Model |
-| ⚡ | Real-Time Predictions |
-| 🎨 | Beautiful Multi-Step Interface |
-| 📊 | Probability Score Output |
-| 🔄 | Automatic Data Preprocessing |
-| 🚀 | FastAPI REST API |
-| 📱 | Responsive Design |
+<td align="center" width="50%">
+
+<img src="assets/ml.gif" width="80">
+
+### Machine Learning
+
+Optimized Random Forest model trained on loan applicant data for highly accurate predictions.
+
+</td>
+
+<td align="center" width="50%">
+
+<img src="assets/api.gif" width="80">
+
+### FastAPI Backend
+
+Blazing-fast inference engine with automatic API documentation.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td align="center">
+
+<img src="assets/ui.gif" width="80">
+
+### Responsive Interface
+
+Modern multi-step application form with smooth user experience.
+
+</td>
+
+<td align="center">
+
+<img src="assets/result.gif" width="80">
+
+### Smart Results
+
+Displays prediction, confidence score and recommendations.
+
+</td>
+
+</tr>
+
+</table>
 
 ---
-
-<div align="center">
-
-### 🛠 Tech Stack
-
-<img src="https://skillicons.dev/icons?i=python,fastapi,html,css,js,vscode,git"/>
-
-</div>
-
----
-
-<div align="center">
-
-### ⭐ If you like this project, don't forget to leave a Star!
-
-<img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="120"/>
-
-</div>
