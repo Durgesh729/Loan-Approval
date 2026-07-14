@@ -1,7 +1,6 @@
-
 <div align="center">
 
-<img src="https://media.giphy.com/media/coxQHKASG60HrHtvkt/giphy.gif" width="220"/>
+<img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="220"/>
 
 # Loan Approval Prediction System
 
@@ -19,26 +18,7 @@ A modern end-to-end Machine Learning application that predicts loan approval dec
   <img src="https://img.shields.io/badge/License-MIT-1E90FF?style=for-the-badge"/>
 </p>
 
-<br>
-
-<p align="center">
-  <a href="#installation">
-    <img src="https://img.shields.io/badge/Get%20Started-000000?style=for-the-badge"/>
-  </a>
-  <a href="#features">
-    <img src="https://img.shields.io/badge/Explore%20Features-2563EB?style=for-the-badge"/>
-  </a>
-  <a href="#api-endpoints">
-    <img src="https://img.shields.io/badge/API%20Documentation-059669?style=for-the-badge"/>
-  </a>
-</p>
-
 </div>
-
----
-
-> **Accurate Predictions • FastAPI Backend • Random Forest Classifier • Responsive UI • Production-Ready Architecture**
-
 
 ---
 
