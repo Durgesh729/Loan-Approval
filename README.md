@@ -474,13 +474,15 @@ Loan-Approval/
 ```
 ---
 
+---
+
 <div align="center">
 
 <img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="180"/>
 
 # Authors
 
-Meet the developers behind the **Loan Approval Prediction System**.
+<img src="https://capsule-render.vercel.app/api?type=waving&height=160&color=0:6C63FF,100:00C9FF&text=Varad%20Paradkar%20%20✦%20%20Durgesh%20Padwal&fontSize=28&fontColor=ffffff&animation=twinkling"/>
 
 <br>
 
@@ -494,7 +496,7 @@ Meet the developers behind the **Loan Approval Prediction System**.
 Machine Learning & Full Stack Developer
 
 <a href="https://github.com/CodexxNinja">
-<img src="https://img.shields.io/badge/GitHub-CodexxNinja-181717?style=for-the-badge&logo=github"/>
+<img src="https://img.shields.io/badge/@CodexxNinja-181717?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
 </td>
@@ -506,7 +508,7 @@ Machine Learning & Full Stack Developer
 Backend & Application Developer
 
 <a href="https://github.com/Durgesh729">
-<img src="https://img.shields.io/badge/GitHub-Durgesh729-181717?style=for-the-badge&logo=github"/>
+<img src="https://img.shields.io/badge/@Durgesh729-181717?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
 </td>
