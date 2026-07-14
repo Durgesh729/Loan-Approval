@@ -477,39 +477,41 @@ Loan-Approval/
 ---
 ---
 
+---
+
 <div align="center">
 
-<img src="YOUR_AUTHORS_HEADER_GIF" width="180"/>
+<img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="180"/>
 
 # Authors
+
+Meet the developers behind the **Loan Approval Prediction System**.
+
+<br>
 
 <table>
 <tr>
 
 <td align="center" width="50%">
 
-<a href="https://github.com/CodexxNinja">
-<img src="YOUR_ANIMATED_VARAD_NAME_CARD.gif" width="320"/>
-</a>
+### Varad Paradkar
 
-<br><br>
+Machine Learning & Full Stack Developer
 
 <a href="https://github.com/CodexxNinja">
-<img src="https://img.shields.io/badge/GitHub-@CodexxNinja-181717?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub-CodexxNinja-181717?style=for-the-badge&logo=github"/>
 </a>
 
 </td>
 
 <td align="center" width="50%">
 
-<a href="https://github.com/Durgesh729">
-<img src="YOUR_ANIMATED_DURGESH_NAME_CARD.gif" width="320"/>
-</a>
+### Durgesh Padwal
 
-<br><br>
+Backend & Application Developer
 
 <a href="https://github.com/Durgesh729">
-<img src="https://img.shields.io/badge/GitHub-@Durgesh729-181717?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub-Durgesh729-181717?style=for-the-badge&logo=github"/>
 </a>
 
 </td>
