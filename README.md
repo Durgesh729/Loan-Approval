@@ -1,4 +1,3 @@
-````markdown
 <div align="center">
 
 # Loan Approval Prediction System
