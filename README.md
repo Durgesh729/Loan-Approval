@@ -1,12 +1,23 @@
+````markdown
 <div align="center">
-
-<img src="assets/hero.gif" width="900">
 
 # Loan Approval Prediction System
 
-### Intelligent Loan Approval Prediction using Machine Learning
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXN4d2s0Y2M0d2NtbTR2MnJwMWl6bHhlbHplNmN5b3I2eXo2OG1oYSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/coxQHKASG60HrHtvkt/giphy.gif" width="220"/>
 
-An end-to-end Machine Learning web application that predicts loan approval status using an optimized **Random Forest Classifier**, delivering real-time predictions through a modern FastAPI backend and responsive multi-step interface.
+### AI-Powered Loan Approval Prediction using Machine Learning & FastAPI
+
+A modern, end-to-end Machine Learning web application that predicts loan approval decisions with **high accuracy** using an optimized **Random Forest Classifier**. The application combines an elegant multi-step interface with a blazing-fast FastAPI backend to provide instant, probability-backed loan approval decisions.
+
+<p>
+
+<img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
+<img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white"/>
+<img src="https://img.shields.io/badge/Random%20Forest-228B22?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge"/>
+
+</p>
 
 </div>
 
@@ -15,26 +26,30 @@ An end-to-end Machine Learning web application that predicts loan approval statu
 <table>
 <tr>
 
-<td width="45%">
+<td width="58%">
 
-## Overview
+# Project Overview
 
-This application analyzes applicant financial and credit information to determine the probability of loan approval.
+The **Loan Approval Prediction System** is an intelligent machine learning web application designed to automate loan eligibility prediction based on applicant financial and personal information.
 
-It includes:
+Instead of relying solely on manual assessment, the application leverages a trained **Random Forest Classifier** to evaluate multiple credit-risk indicators and instantly predict whether a loan should be **Approved** or **Rejected**, complete with confidence probabilities.
 
-- Random Forest ML Model
-- FastAPI REST API
-- Automatic Data Preprocessing
-- Multi-Step Interactive UI
-- Probability-based Predictions
-- Beautiful Result Dashboard
+Key Highlights:
+
+- End-to-End ML Workflow
+- FastAPI REST Backend
+- Interactive Multi-Step Form
+- Glassmorphism UI
+- Real-Time Prediction
+- Probability-Based Decision
+- Responsive Design
+- Production Ready Architecture
 
 </td>
 
-<td width="55%" align="center">
+<td align="center">
 
-<img src="assets/overview.gif" width="350">
+<img src="https://media.giphy.com/media/l46Cy1rHbQ92uuLXa/giphy.gif" width="320">
 
 </td>
 
@@ -46,23 +61,47 @@ It includes:
 <table>
 <tr>
 
-<td align="center" width="50%">
+<td align="center">
 
-<img src="assets/ml.gif" width="80">
-
-### Machine Learning
-
-Optimized Random Forest model trained on loan applicant data for highly accurate predictions.
+<img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="280">
 
 </td>
 
-<td align="center" width="50%">
+<td width="60%">
 
-<img src="assets/api.gif" width="80">
+# Features
 
-### FastAPI Backend
+<table>
 
-Blazing-fast inference engine with automatic API documentation.
+<tr>
+
+<td align="center" width="33%">
+
+<img src="https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif" width="120"><br>
+
+## Intelligent Prediction
+
+Optimized Random Forest model predicts loan approvals with confidence probability.
+
+</td>
+
+<td align="center" width="33%">
+
+<img src="https://media.giphy.com/media/3o7TKtnuHOHHUjR38Y/giphy.gif" width="120"><br>
+
+## Multi-Step Application
+
+Smooth and responsive loan application workflow with validation.
+
+</td>
+
+<td align="center" width="33%">
+
+<img src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif" width="120"><br>
+
+## Real-Time Processing
+
+Automatic preprocessing, encoding, scaling and instant inference.
 
 </td>
 
@@ -72,21 +111,37 @@ Blazing-fast inference engine with automatic API documentation.
 
 <td align="center">
 
-<img src="assets/ui.gif" width="80">
+<img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" width="120"><br>
 
-### Responsive Interface
+## FastAPI Backend
 
-Modern multi-step application form with smooth user experience.
+High-performance asynchronous REST API with Swagger documentation.
 
 </td>
 
 <td align="center">
 
-<img src="assets/result.gif" width="80">
+<img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" width="120"><br>
 
-### Smart Results
+## Beautiful Result Screen
 
-Displays prediction, confidence score and recommendations.
+Animated approval and rejection dashboard with contextual recommendations.
+
+</td>
+
+<td align="center">
+
+<img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="120"><br>
+
+## Responsive UI
+
+Works seamlessly across desktops, tablets and mobile devices.
+
+</td>
+
+</tr>
+
+</table>
 
 </td>
 
@@ -95,3 +150,487 @@ Displays prediction, confidence score and recommendations.
 </table>
 
 ---
+
+<table>
+
+<tr>
+
+<td width="58%">
+
+# Architecture
+
+```mermaid
+flowchart LR
+
+A[User Browser]
+
+B[Multi-Step HTML Interface]
+
+C[JavaScript Validation]
+
+D[FastAPI Backend]
+
+E[Preprocessing Pipeline]
+
+F[Random Forest Model]
+
+G[Prediction]
+
+H[Result Dashboard]
+
+A --> B
+
+B --> C
+
+C --> D
+
+D --> E
+
+E --> F
+
+F --> G
+
+G --> H
+````
+
+The architecture separates presentation, preprocessing, machine learning inference and result rendering, making the application scalable and maintainable.
+
+</td>
+
+<td align="center">
+
+<img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="320">
+
+</td>
+
+</tr>
+
+</table>
+
+---
+
+<table>
+
+<tr>
+
+<td align="center">
+
+<img src="https://media.giphy.com/media/juua9i2c2fA0AIp2iq/giphy.gif" width="320">
+
+</td>
+
+<td>
+
+# Tech Stack
+
+<div align="center">
+
+### Languages & Frameworks
+
+<img src="https://skillicons.dev/icons?i=python,fastapi,html,css,js"/>
+
+### Machine Learning
+
+<img src="https://skillicons.dev/icons?i=sklearn"/>
+
+### Tools
+
+<img src="https://skillicons.dev/icons?i=git,github,vscode"/>
+
+</div>
+
+| Component           | Technology               |
+| ------------------- | ------------------------ |
+| Backend             | FastAPI                  |
+| Machine Learning    | Random Forest Classifier |
+| Data Processing     | Pandas, NumPy            |
+| Model Serialization | Joblib                   |
+| Templates           | Jinja2                   |
+| Frontend            | HTML5, CSS3, JavaScript  |
+
+</td>
+
+</tr>
+
+</table>
+
+---
+
+<table>
+
+<tr>
+
+<td width="58%">
+
+# Dataset
+
+The predictive model is trained using important financial and credit-risk indicators.
+
+| Feature               | Type        |
+| --------------------- | ----------- |
+| Age                   | Numerical   |
+| Income                | Numerical   |
+| Home Ownership        | Categorical |
+| Employment Length     | Numerical   |
+| Loan Intent           | Categorical |
+| Loan Amount           | Numerical   |
+| Interest Rate         | Numerical   |
+| Loan Grade            | Categorical |
+| Credit History Length | Numerical   |
+| Historical Default    | Categorical |
+
+These features undergo preprocessing including:
+
+* Missing Value Handling
+* Feature Encoding
+* Feature Scaling
+* Model Inference
+
+</td>
+
+<td align="center">
+
+<img src="https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif" width="300">
+
+</td>
+
+</tr>
+
+</table>
+
+---
+
+<table>
+
+<tr>
+
+<td align="center">
+
+<img src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif" width="300">
+
+</td>
+
+<td>
+
+# Installation
+
+```bash
+git clone https://github.com/CodexxNinja/Loan-Approval.git
+
+cd Loan-Approval
+```
+
+### Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+Windows
+
+```bash
+venv\Scripts\activate
+```
+
+Linux / macOS
+
+```bash
+source venv/bin/activate
+```
+
+Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Train Model
+
+```bash
+python train_model.py
+```
+
+Run FastAPI
+
+```bash
+uvicorn app:app --reload
+```
+
+</td>
+
+</tr>
+
+</table>
+
+---
+
+<table>
+
+<tr>
+
+<td width="58%">
+
+# Usage
+
+Once the server is running, access:
+
+| Resource      | URL                         |
+| ------------- | --------------------------- |
+| Web Interface | http://127.0.0.1:8000       |
+| Swagger UI    | http://127.0.0.1:8000/docs  |
+| ReDoc         | http://127.0.0.1:8000/redoc |
+
+Workflow
+
+1. Fill applicant details.
+2. Submit the form.
+3. Backend preprocesses the data.
+4. Random Forest predicts the result.
+5. Probability score is generated.
+6. Beautiful verdict page is displayed.
+
+</td>
+
+<td align="center">
+
+<img src="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif" width="300">
+
+</td>
+
+</tr>
+
+</table>
+
+---
+
+<table>
+
+<tr>
+
+<td align="center">
+
+<img src="https://media.giphy.com/media/3o7aCTfyhYawdOXcFW/giphy.gif" width="300">
+
+</td>
+
+<td>
+
+# API Endpoints
+
+| Method | Endpoint | Description           |
+| ------ | -------- | --------------------- |
+| GET    | /        | Application Home      |
+| POST   | /predict | Predict Loan Approval |
+| GET    | /docs    | Swagger Documentation |
+| GET    | /redoc   | ReDoc Documentation   |
+
+</td>
+
+</tr>
+
+</table>
+
+---
+
+<table>
+
+<tr>
+
+<td width="58%">
+
+# Project Structure
+
+```text
+Loan-Approval
+│
+├── dataset
+│
+├── models
+│
+├── static
+│   ├── css
+│   └── js
+│
+├── templates
+│   ├── index.html
+│   └── result.html
+│
+├── app.py
+├── train_model.py
+├── requirements.txt
+└── README.md
+```
+
+</td>
+
+<td align="center">
+
+<img src="https://media.giphy.com/media/l0HlQ7LRalQqdWfao/giphy.gif" width="300">
+
+</td>
+
+</tr>
+
+</table>
+
+---
+
+<table>
+
+<tr>
+
+<td align="center">
+
+<img src="https://media.giphy.com/media/QBd2kLB5qDmysEXre9/giphy.gif" width="300">
+
+</td>
+
+<td>
+
+# Screenshots
+
+| Home           | Prediction     | Result         |
+| -------------- | -------------- | -------------- |
+| Add Screenshot | Add Screenshot | Add Screenshot |
+
+</td>
+
+</tr>
+
+</table>
+
+---
+
+<table>
+
+<tr>
+
+<td width="58%">
+
+# Future Enhancements
+
+* XGBoost Integration
+* LightGBM Comparison
+* Explainable AI using SHAP
+* LIME Visualization
+* Docker Support
+* AWS Deployment
+* Render Deployment
+* User Authentication
+* Loan History Dashboard
+* Model Monitoring
+
+</td>
+
+<td align="center">
+
+<img src="https://media.giphy.com/media/l0MYEqEzwMWFCg8rm/giphy.gif" width="300">
+
+</td>
+
+</tr>
+
+</table>
+
+---
+
+<table>
+
+<tr>
+
+<td align="center">
+
+<img src="https://media.giphy.com/media/l3vRfNA1p0rvhMSvS/giphy.gif" width="280">
+
+</td>
+
+<td>
+
+# Authors
+
+### Varad Paradkar
+
+GitHub: https://github.com/CodexxNinja
+
+---
+
+### Durgesh Padwal
+
+GitHub: *(Add Profile Link)*
+
+</td>
+
+</tr>
+
+</table>
+
+---
+
+<table>
+
+<tr>
+
+<td width="58%">
+
+# License
+
+This project is licensed under the **MIT License**.
+
+Feel free to use, modify and distribute this project while providing appropriate credit.
+
+</td>
+
+<td align="center">
+
+<img src="https://media.giphy.com/media/3o7TKTDn976rzVgky4/giphy.gif" width="280">
+
+</td>
+
+</tr>
+
+</table>
+
+---
+
+<table>
+
+<tr>
+
+<td align="center">
+
+<img src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif" width="300">
+
+</td>
+
+<td>
+
+# Support
+
+If you found this project useful, consider:
+
+⭐ Star this repository
+
+🍴 Fork the repository
+
+🐞 Report issues
+
+💡 Suggest improvements
+
+📩 Open Pull Requests
+
+---
+
+<div align="center">
+
+### Built with ❤️ using FastAPI, Scikit-Learn & Python
+
+**Happy Coding!**
+
+</div>
+
+</td>
+
+</tr>
+
+</table>
+```
