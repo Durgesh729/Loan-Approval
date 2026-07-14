@@ -489,7 +489,7 @@ Meet the developers behind the **Loan Approval Prediction System**.
 
 ### Varad Paradkar
 
-Machine Learning & Full Stack Developer
+AIML Engineer
 
 <a href="https://github.com/CodexxNinja">
 <img src="https://img.shields.io/badge/GitHub-CodexxNinja-181717?style=for-the-badge&logo=github"/>
