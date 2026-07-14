@@ -472,13 +472,6 @@ Loan-Approval/
 ├── requirements.txt
 └── README.md
 ```
----
-
----
----
-
----
-
 <div align="center">
 
 <img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="180"/>
