@@ -1,12 +1,10 @@
 <div align="center">
 
-<img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="100%"/>
-
 # Loan Approval Prediction System
 
 ### AI-Powered Loan Approval Prediction using Machine Learning & FastAPI
 
-A modern end-to-end Machine Learning application that predicts loan approval decisions using an optimized **Random Forest Classifier**, delivering fast, accurate, and probability-backed predictions through a responsive multi-step web interface.
+A modern end-to-end Machine Learning web application that predicts loan approval decisions using an optimized **Random Forest Classifier**, delivering fast, accurate, and probability-backed predictions through a responsive multi-step interface.
 
 <br>
 
@@ -15,6 +13,10 @@ A modern end-to-end Machine Learning application that predicts loan approval dec
 <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white"/>
 <img src="https://img.shields.io/badge/Random%20Forest-228B22?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge"/>
+
+<br><br>
+
+> **FastAPI • Machine Learning • Random Forest • Responsive UI • Production Ready**
 
 </div>
 
