@@ -316,7 +316,7 @@ Responsive Web Interface
 
 # Dataset
 
-The predictive model is trained on carefully selected financial and credit-risk features to make accurate loan approval predictions. Each feature is preprocessed before being passed to the Random Forest Classifier.
+The predictive model is trained on carefully selected financial and credit-risk features to make accurate loan approval predictions. Each feature is preprocessed before being passed to Random Forest Classifier.
 
 </div>
 
