@@ -16,7 +16,7 @@ A modern end-to-end Machine Learning web application that predicts loan approval
 
 <br><br>
 
-> **FastAPI • Machine Learning • Random Forest • Responsive UI • Production Ready**
+> **FastAPI • Machine Learning • Random Forest • Responsive UI **
 
 </div>
 
