@@ -41,7 +41,6 @@ Key Highlights:
 - Real-Time Prediction
 - Probability-Based Decision
 - Responsive Design
-- Production Ready Architecture
 
 </td>
 
